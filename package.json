@@ -7,7 +7,19 @@
   "license": "MIT",
   "dependencies": {
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "serve": "^11.3.2"
+  },
+  "scripts": {
+    "serve": "webpack --mode=development",
+    "build": "webpack --mode=production",
+    "serve:worker": "webpack --mode=development --config webpack.worker.config.js",
+    "build:worker": "webpack --mode=production --config webpack.worker.config.js",
+    "dev": "webpack-dev-server",
+    "start": "serve ./dist",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "test": "jest"
   },
   "devDependencies": {
     "@babel/core": "7.10.2",
@@ -36,13 +48,5 @@
     "webpack": "4.43.0",
     "webpack-cli": "3.3.12",
     "webpack-dev-server": "3.11.0"
-  },
-  "scripts": {
-    "serve": "webpack --mode=development",
-    "build": "webpack --mode=production",
-    "dev": "webpack-dev-server",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
-    "test": "jest"
   }
 }
