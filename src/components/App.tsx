@@ -6,6 +6,15 @@ const App: React.FC<{}> = () => {
     <>
       <h1>{"Hello, World!"}</h1>
       <Counter initialValue={0} />
+      <button
+        onClick={() => {
+          fetch("./app.js").then(res => {
+            console.log(res)
+          })
+        }}
+      >
+        {"fetch event"}
+      </button>
     </>
   )
 }
