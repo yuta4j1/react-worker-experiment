@@ -14,6 +14,16 @@ self.addEventListener("activate", e => {
   console.log("activate Event", e.type)
 })
 
-self.addEventListener("fetch", e => {
+self.addEventListener("fetch", (e: any) => {
   console.log("fetch event")
+  e.respondWith(
+    caches.match(e.request).then(response => {
+      if (response) {
+        console.log("from cache.")
+        return response
+      }
+      console.log("no cache, request")
+      return fetch(e.request)
+    })
+  )
 })
