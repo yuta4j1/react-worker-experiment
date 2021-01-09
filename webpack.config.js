@@ -25,7 +25,8 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
-            template: "./template/index.html"
+            template: "./template/index.html",
+            minify: false,
         })
     ],
     devServer: {
