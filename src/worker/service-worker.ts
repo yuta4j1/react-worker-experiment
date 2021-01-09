@@ -1,5 +1,5 @@
 const CACHE_NAME = "cache-v1"
-const urlsToCache = ["/", "/styles/main.css", "/script/main.js"]
+const urlsToCache = ["/", "/app.js"]
 self.addEventListener("install", (e: any) => {
   console.log("install Event")
   e.waitUntil(
