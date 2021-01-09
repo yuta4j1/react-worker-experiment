@@ -9,7 +9,7 @@ if ("serviceWorker" in navigator) {
     navigator.serviceWorker
       .register("/service-worker.js")
       .then((reg) => {
-        console.log("register Successful!! scope: ", reg.scope)
+        console.log("register scope: ", reg.scope)
       })
       .catch((err) => {
         console.log("Service Worker registration failed", err)
