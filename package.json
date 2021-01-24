@@ -6,8 +6,8 @@
   "author": "yuta4j1",
   "license": "MIT",
   "dependencies": {
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0",
     "serve": "^11.3.2"
   },
   "scripts": {
