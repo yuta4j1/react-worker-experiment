@@ -8,14 +8,12 @@
     "start_url": "/",
     "icons": [
         {
-          "src": "/logo.svg",
-          "sizes": "256x256",
-          "type": "image/svg"
+          "src": "logo.svg",
+          "sizes": "any"
         },
         {
-            "src": "/192_logo.svg",
-            "sizes": "192x192",
-            "type": "image/svg"
+            "src": "192_logo.svg",
+            "sizes": "any"
         }
     ]
 }
