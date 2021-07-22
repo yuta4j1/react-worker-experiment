@@ -7,7 +7,7 @@ ReactDOM.render(<App />, document.getElementById("app"))
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
     navigator.serviceWorker
-      .register("/service-worker.js")
+      .register("/sw.js")
       .then((reg) => {
         console.log("register scope: ", reg.scope)
       })
