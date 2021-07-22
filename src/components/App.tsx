@@ -1,11 +1,15 @@
 import React from "react"
 import Counter from "./Counter"
 import Display from "./Display"
+import Logo from "../../icon/192_logo.svg"
 
 const App: React.FC<{}> = () => {
   return (
     <>
-      <h1>{"React PWA"}</h1>
+      <div>
+        <Logo />
+        <h1>{"React PWA"}</h1>
+      </div>
       <Counter initialValue={0} />
       <Display />
       <button
