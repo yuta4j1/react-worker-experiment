@@ -15,8 +15,8 @@
   },
   "scripts": {
     "local_dev": "webpack-dev-server",
-    "serve": "webpack --mode=development && cpx manifest.json dist",
-    "build": "webpack --mode=production && cpx manifest.json dist",
+    "serve": "webpack --mode=development && cpx manifest.json dist && cpx icon/**/*.svg dist",
+    "build": "webpack --mode=production && cpx manifest.json dist && cpx icon/**/*.svg dist",
     "serve:worker": "webpack --mode=development --config webpack.worker.config.js",
     "build:worker": "webpack --mode=production --config webpack.worker.config.js",
     "start": "serve ./dist",
