@@ -1,5 +1,9 @@
-const CACHE_NAME = "cache-v1"
-const urlsToCache = ["/", "/app.js"]
+const CACHE_NAME = "v1"
+const urlsToCache = [
+  "/",
+  "/app.js",
+  "https://fonts.googleapis.com/css?family=M+PLUS+1p:300&display=swap",
+]
 self.addEventListener("install", (e: any) => {
   console.log("install Event")
   e.waitUntil(

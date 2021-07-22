@@ -5,7 +5,7 @@ module.exports = {
     app: "./src/worker/service-worker.ts",
   },
   output: {
-    filename: "service-worker.js",
+    filename: "sw.js",
     path: path.resolve(__dirname, "dist"),
   },
   module: {
