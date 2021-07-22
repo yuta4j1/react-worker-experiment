@@ -1,6 +1,8 @@
 # react-worker-experiment
 Reactでworkerスレッドを活用する時の色々を学ぶリポジトリ
 
+https://react-worker-experiment.vercel.app/
+
 ## Build
 ```
 $ yarn serve:worker
