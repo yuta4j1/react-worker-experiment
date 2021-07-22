@@ -7,7 +7,7 @@ const App: React.FC<{}> = () => {
   return (
     <>
       <div>
-        <Logo />
+        {/* <Logo /> */}
         <h1>{"React PWA"}</h1>
       </div>
       <Counter initialValue={0} />
