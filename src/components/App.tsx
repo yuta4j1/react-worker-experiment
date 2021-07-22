@@ -1,11 +1,13 @@
 import React from "react"
 import Counter from "./Counter"
+import Display from "./Display"
 
 const App: React.FC<{}> = () => {
   return (
     <>
-      <h1>{"Hello, World!"}</h1>
+      <h1>{"React Service Worker"}</h1>
       <Counter initialValue={0} />
+      <Display />
       <button
         onClick={() => {
           fetch("./app.js").then(res => {
@@ -13,7 +15,16 @@ const App: React.FC<{}> = () => {
           })
         }}
       >
-        {"fetch event"}
+        {"app.js fetch"}
+      </button>
+      <button
+        onClick={() => {
+          fetch("./").then(res => {
+            console.log(res)
+          })
+        }}
+      >
+        {"/ fetch"}
       </button>
     </>
   )
