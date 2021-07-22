@@ -5,7 +5,7 @@ import Display from "./Display"
 const App: React.FC<{}> = () => {
   return (
     <>
-      <h1>{"React Service Worker"}</h1>
+      <h1>{"React PWA"}</h1>
       <Counter initialValue={0} />
       <Display />
       <button
