@@ -15,8 +15,8 @@
   },
   "scripts": {
     "local_dev": "webpack-dev-server",
-    "serve": "webpack --mode=development",
-    "build": "webpack --mode=production",
+    "serve": "webpack --mode=development && cpx manifest.json dist",
+    "build": "webpack --mode=production && cpx manifest.json dist",
     "serve:worker": "webpack --mode=development --config webpack.worker.config.js",
     "build:worker": "webpack --mode=production --config webpack.worker.config.js",
     "start": "serve ./dist",
@@ -39,6 +39,7 @@
     "@types/styled-components": "5.1.0",
     "babel-loader": "8.1.0",
     "clean-webpack-plugin": "3.0.0",
+    "cpx": "^1.5.0",
     "enzyme": "3.11.0",
     "enzyme-adapter-react-16": "1.15.2",
     "html-webpack-plugin": "4.3.0",
