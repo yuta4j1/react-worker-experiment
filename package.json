@@ -6,11 +6,15 @@
   "author": "yuta4j1",
   "license": "MIT",
   "dependencies": {
+    "firebase": "^8.2.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "serve": "^11.3.2"
+    "serve": "^11.3.2",
+    "workbox-cacheable-response": "^6.1.5",
+    "workbox-strategies": "^6.1.5"
   },
   "scripts": {
+    "local_dev": "webpack-dev-server",
     "serve": "webpack --mode=development",
     "build": "webpack --mode=production",
     "serve:worker": "webpack --mode=development --config webpack.worker.config.js",
