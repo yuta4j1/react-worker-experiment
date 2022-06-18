@@ -32,7 +32,7 @@
     "@storybook/preset-typescript": "3.0.0",
     "@storybook/react": "5.3.19",
     "@svgr/webpack": "^5.5.0",
-    "@types/enzyme": "3.10.5",
+    "@types/enzyme": "3.10.12",
     "@types/enzyme-adapter-react-16": "1.0.6",
     "@types/jest": "26.0.0",
     "@types/react": "16.9.38",
